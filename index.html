@@ -148,6 +148,27 @@
 
 
     </center>
+        
+          <!-- The lightbox element -->
+  <div id="lightbox">
+    <img src="https://media.tenor.com/bYksTyRFjYwAAAAM/running-half-horse.gif" alt="Popup Image">
+  </div>
+
+  <script>
+    // Get the lightbox element
+    var lightbox = document.getElementById("lightbox");
+
+    // Show the lightbox when the page is loaded
+    window.addEventListener("load", function() {
+      lightbox.style.display = "block";
+
+      // Hide the lightbox after 1 seconds
+      setTimeout(function() {
+        lightbox.style.display = "none";
+      }, 1000);
+    });
+  </script>
+        
 </body>
 
 </html>
